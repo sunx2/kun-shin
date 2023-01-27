@@ -1,0 +1,504 @@
+<!DOCTYPE html><html><head>
+      <title>help</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\sun60\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.6.7\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p,html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div{display:inline}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  300px/2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <p><img src="https://media.discordapp.net/attachments/275135052466094081/1068379305815576637/genshin-impact-banner-1-550x309.png" alt="image"></p>
+<h2 class="mume-header" id="-links-">#Links</h2>
+
+<table>
+<tbody><tr><td> Base Game </td> <td> <a href="https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20221024103618_h2e3o3zijYKEqHnQ/GenshinImpact_3.2.0.zip">[Download] </a></td> </tr><tr>
+</tr><tr><td> Chinese Audio </td> <td> <a href="https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20221024103618_h2e3o3zijYKEqHnQ/Audio_Chinese_3.2.0.zip">[Download] </a></td> </tr><tr>
+</tr><tr><td> English Audio </td> <td> <a href="https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20221024103618_h2e3o3zijYKEqHnQ/Audio_English(US)_3.2.0.zip">[Download] </a></td> </tr><tr>
+</tr><tr><td> Korean Audio </td> <td> <a href="https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20221024103618_h2e3o3zijYKEqHnQ/Audio_Korean_3.2.0.zip">[Download] </a></td> </tr><tr>
+</tr><tr><td> Japanese Audio </td> <td> <a href="https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20221024103618_h2e3o3zijYKEqHnQ/Audio_Japanese_3.2.0.zip">[Download] </a></td> </tr><tr>
+</tr><tr><td> Patch</td> <td> <a href="https://mega.nz/file/o51FFaDJ#KrRm-df4O3z14t50d74pK5sZTYDrRGEjv_mTFHW0AV4">[Download] </a></td> </tr><tr>
+</tr><tr><td> Fiddler Classic </td> <td> <a href="https://mega.nz/file/U081HDgB#267UI5cc9MYVDdNYhpjE6GNCBHr_YVlcIq76dBJ8VHc">[Download] </a></td> </tr><tr>
+</tr></tbody></table>
+<h1 class="mume-header" id="-summary-bsteps-to-install-gameb-summary-"><summary> <b>Steps to Install game</b> </summary></h1>
+
+<h2 class="mume-header" id="-steps-">#Steps</h2>
+
+<ol type="1">
+<li>Download and unpack the game.
+</li>
+<li>Download and unpack the patch on top of the game overwriting the original DLL file.</li>
+<li> Download and unpack the desired voice pack to be used on the game.</li>
+<li>Download and install <a href="https://mega.nz/file/U081HDgB#267UI5cc9MYVDdNYhpjE6GNCBHr_YVlcIq76dBJ8VHc">FIDDLER CLASSIC</a></li>
+<li>Run fiddler and go on FiddlerScript tab, paste the following script then click Save Script:
+<pre data-role="codeBlock" data-info="cs" class="language-csharp"><span class="token class-name">import</span> System<span class="token punctuation">;</span>
+import System<span class="token punctuation">.</span>Windows<span class="token punctuation">.</span>Forms<span class="token punctuation">;</span>
+<span class="token class-name">import</span> Fiddler<span class="token punctuation">;</span>
+<span class="token keyword keyword-class">class</span> <span class="token class-name">Handlers</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword keyword-static">static</span> <span class="token class-name"><span class="token keyword keyword-var">var</span></span> redirect <span class="token operator">=</span> <span class="token punctuation">[</span>
+        <span class="token string">&quot;://dispatchosglobal.yuanshen.com/&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;://osusadispatch.yuanshen.com/&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;://osasiadispatch.yuanshen.com/&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;://oseurodispatch.yuanshen.com/&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;://hk4e-sdk-os-static.hoyoverse.com/&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;://sdk-os-static.hoyoverse.com/&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;://api-account-os.hoyoverse.com/&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;://hk4e-sdk-os.hoyoverse.com/&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;://account.hoyoverse.com/?type=sdk&quot;</span>        
+        <span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword keyword-static">static</span> <span class="token class-name"><span class="token keyword keyword-var">var</span></span> block <span class="token operator">=</span> <span class="token punctuation">[</span>
+        <span class="token string">&quot;://overseauspider.yuanshen.com:8888/log&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;://log-upload-os.hoyoverse.com/sdk/dataUpload&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;://log-upload.hoyoverse.com/sdk/dataUpload&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;://minor-api-os.hoyoverse.com/common/h5log/log/batch&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;://log-upload-os.hoyoverse.com/crash/dataUpload&quot;</span>        
+        <span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword keyword-static">static</span> <span class="token class-name"><span class="token keyword keyword-var">var</span></span> host <span class="token operator">=</span> <span class="token string">&quot;omega.servegame.com&quot;</span><span class="token punctuation">;</span>
+    <span class="token keyword keyword-static">static</span> <span class="token class-name"><span class="token keyword keyword-var">var</span></span> port <span class="token operator">=</span> <span class="token number">7443</span><span class="token punctuation">;</span>
+    <span class="token keyword keyword-static">static</span> <span class="token class-name"><span class="token keyword keyword-var">var</span></span> protocol <span class="token operator">=</span> <span class="token string">&quot;https&quot;</span><span class="token punctuation">;</span>
+    <span class="token keyword keyword-static">static</span> <span class="token return-type class-name">function</span> <span class="token function">OnBeforeRequest</span><span class="token punctuation">(</span><span class="token named-parameter punctuation">o</span><span class="token punctuation">:</span> Session<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword keyword-for">for</span> <span class="token punctuation">(</span><span class="token class-name"><span class="token keyword keyword-var">var</span></span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> block<span class="token punctuation">.</span>length<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>o<span class="token punctuation">.</span><span class="token function">uriContains</span><span class="token punctuation">(</span>block<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                o<span class="token punctuation">.</span>oRequest<span class="token punctuation">.</span><span class="token function">FailSession</span><span class="token punctuation">(</span><span class="token number">404</span><span class="token punctuation">,</span> <span class="token string">&quot;Blocked&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Oh no!!!&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token keyword keyword-return">return</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword keyword-for">for</span> <span class="token punctuation">(</span><span class="token class-name"><span class="token keyword keyword-var">var</span></span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> redirect<span class="token punctuation">.</span>length<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>o<span class="token punctuation">.</span><span class="token function">uriContains</span><span class="token punctuation">(</span>redirect<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                o<span class="token punctuation">.</span>oRequest<span class="token punctuation">.</span>headers<span class="token punctuation">.</span>UriScheme <span class="token operator">=</span> protocol<span class="token punctuation">;</span>
+                o<span class="token punctuation">.</span>host <span class="token operator">=</span> host<span class="token punctuation">;</span>  
+                o<span class="token punctuation">.</span>port <span class="token operator">=</span> port<span class="token punctuation">;</span>
+                <span class="token keyword keyword-break">break</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</pre></li>
+<li> On Fiddler, go to Tools-&gt;Options-&gt;HTTPS and set everything as following
+<p><img src="https://media.discordapp.net/attachments/275135052466094081/1068382731542724608/image.png" alt="image"></p></li><p></p>
+<li>Press Win + R, write regedit.exe and then run it.
+</li>
+<li>Go to 
+<p><code>Computer\HKEY_CURRENT_USER\Software\miHoYo\Genshin Impact</code><br>
+on regedit</p></li><p></p>
+<li> Select the GENERAL_DATA_h key, open it and find &#x201C;deviceVoiceLanguageType&#x201D;, the number following it is the current voice language on the game settings, 1 = English, 2 = Japanese, set the value accordingly to the voice pack language you downloaded and save it.
+10- Run the game from the .exe file on the game folder
+</li>
+<li>Run the game from the .exe file on the game folder
+</li>
+<li>At login screen choose an hard to guess username, you do not use password (put anything on that field), so the only security of your account is having a hard to guess username (merge your password on it), the account will be automatically created on first login, then simply keep using the same username afterwards to access the same account.
+</li>
+</ol>
+
+<h1 class="mume-header" id="-summary-strong-changes-to-base-gamestrong-summary-"><summary> <strong> Changes to base game.</strong> </summary></h1>
+
+<h3 class="mume-header" id="--limited-time-gear-">&#x2B50; limited Time Gear</h3>
+
+<span style="font-size:14px">
+Pets, Gadgets, Weapons, Furnishings, Blueprints, Skins, Wings. All the old retired Event items can be bought or found in the game somewhere. Changelog shows exact locations.
+</span>
+<h3 class="mume-header" id="--wishes-overhaul--">&#x2B50; Wishes Overhaul &#x1F60D;</h3>
+
+<span style="font-size:14px">
+ Fates now cost <strong style="font-size:18px">10 Primogem per roll.</strong> In addition, almost every instance of getting <b>rewarded Fates now gives you 5x or 10x more (Adventurer Ranks, Quests, Offering Systems, Character Ascensions)</b>
+</span>
+<h3 class="mume-header" id="--banner-overhaul--">&#x2B50; Banner Overhaul</h3>
+
+<span style="font-size:14px">
+There are a total of<b> 7 Banners running</b>. Four of the Banners (Klee, Xiao, Arataki Itto, and Tighnari) will ONLY drop characters from that City (Mondstadt, Liyue, Inazuma and Sumeru). Wanderlust Invocation can now drop every single character available (Except Traveler and Aloy). The two Weapon Banners can drop any available weapons. The featured Characters on the Banner drop less often than normal as well.
+</span>
+<h3 class="mume-header" id="--banner-probability-overhaul--">&#x2B50; Banner Probability Overhaul</h3>
+
+<span style="font-size:14px">
+Banner Probability Overhaul: Character Banners will only drop 3 Star Weapons, 4 Star Characters and 5 Star Characters. Weapon Banners will only drop 3/4/5 Star Weapons. In addition, 4/5 Stars will drop more often and the Pity System activates at 50 rolls instead of 74.
+</span>
+<h3 class="mume-header" id="--banner-probability-overhaul---1">&#x2B50; Banner Probability Overhaul</h3>
+
+<span style="font-size:14px">
+Banner Probability Overhaul: Character Banners will only drop 3 Star Weapons, 4 Star Characters and 5 Star Characters. Weapon Banners will only drop 3/4/5 Star Weapons. In addition, 4/5 Stars will drop more often and the Pity System activates at 50 rolls instead of 74.
+</span>
+<h3 class="mume-header" id="--teapot-overhaul--">&#x1FAD6; Teapot Overhaul</h3>
+
+<span style="font-size:14px" class="mume-header" id="--gadget-changes--">
+Furnishing Crafting changed to be much faster (4hr&gt;8min, 6hr&gt;12min, 8hr&gt;16min, 10hr&gt;20min, 12hr&gt;24min, 14hr&gt;28min, 16hr&gt;32min) and can be immediately finished with an &apos;Vial of Adeptal Speed&apos;. Farming is faster as well (30min vs 2 days). Most important items have had their limited purchase removed in Realm Depot. You also get more Companionship EXP and Realm Currency per hour (5x normal amount per level).
+</span>
+###  &#x1F50E; Gadget Changes 
+
+<span style="font-size:14px">
+Gadget Changes: All four Resonance Stones have had their hint AOE on the map shrunk so they&apos;re easier to use when you&apos;re completing the Statues of the Seven. Parametric Transformer also now recharges in 6 Hours instead of 6 Days.
+</span>
+<h4 class="mume-header" id="--each-one-will-now-reward-you-with-the-refining-material-for-any-event-weapons-you-purchase-in-that-zone-at-max-level-you-also-get-a-free-5-star-character-for-that-specific-zones-archon-frostbearing-tree-and-lumenstone-adjuvant-also-follow-this-pattern-">&#x1F4AB; Each one will now reward you with the Refining Material for any Event Weapons you purchase in that zone. At max level you also get a free 5 Star Character for that specific zones Archon. Frostbearing Tree and Lumenstone Adjuvant also follow this pattern.</h4>
+
+<ul>
+<li><strong>Statue of the Seven (Anemo)</strong>: 4x &apos;The Visible Wings&apos;, 4x &apos;Fragments of Innocence&apos;,  Character &apos;Venti&apos;</li>
+<li><strong>Statue of the Seven (Geo)</strong>: 4x &apos;Emperor&apos;s Balsam&apos;, Character &apos;Zhongli&apos;</li>
+<li><strong>Statue of the Seven (Electro)</strong>: 4x &apos;Glowing Gem&apos;, Character &apos;Raiden Shogun&apos;</li>
+<li><strong>Statue of the Seven (Dendro)</strong>: 4x &apos;Plume of the Changing Winds&apos;, Character &apos;Nahida&apos;</li>
+<li><strong>Frostbearing Tree</strong>: 4x &apos;Festering Dragon Marrow&apos;, 4x &apos;Alkahest&apos;, Character &apos;Albedo&apos;</li>
+<li><strong>Lumenstone Adjuvant</strong>: Weapon &apos;Oathsworn Eye&apos;, 4x &apos;Ointment of Sight&apos;, Characters &apos;Keqing&apos; and &apos;Xiao&apos;</li>
+</ul>
+<h4 class="mume-header" id="--hangouts-all-hangouts-now-give-the-character-featured-in-the-hangout-when-you-complete-all-endings-">&#x1F3E0; Hangouts: All Hangouts now give the Character featured in the Hangout when you complete all endings</h4>
+
+<ul>
+<li>Barbara (4) - Wellspring of Healing</li>
+<li>Chongyun (4) - Signs of Evil</li>
+<li>Noelle (4) - Chivalric Training</li>
+<li>Bennett (4) - Fantastic Voyage</li>
+<li>Noelle (4) - Knightly Exam Prep</li>
+<li>Diona (4) - The Cat and the Cocktail</li>
+<li>Thoma (4) - A Housekeeper&apos;s Daily Chores</li>
+<li>Sayu (4) - Yoohoo Art: Seichou no Jutsu</li>
+<li>Beidou (4) - When the Crux Shines Bright</li>
+<li>Gorou (4) - The Canine General&apos;s Special Operations</li>
+<li>Ningguang (4) - The Jade Chamber&apos;s Returning Guest</li>
+<li>Yun Jin (4) - A Song That Knows Grace</li>
+<li>Kuki Shinobu (4) - The Gang&apos;s Daily Deeds</li>
+<li>Shikanoin Heizou (4) - Trap &apos;Em by Storm</li>
+</ul>
+<h4 class="mume-header" id="--story-arcs-all-story-quests-now-give-the-character-featured-in-the-arc-4-star-or-a-stella-fortuna-5-star-on-final-quest-of-the-arc-">&#x1F4D5; Story Arcs: All Story Quests now give the Character featured in the Arc (4 Star) or a Stella Fortuna (5 Star) on final quest of the Arc.</h4>
+
+<ul>
+<li>Razor (4) - Fate&apos;s Chosen Lupical</li>
+<li>Kaeya (4) - Kaeya&apos;s Gain</li>
+<li>Diluc (5) - Darknight Hero&apos;s Alibi</li>
+<li>Amber (4) - Outrider Style</li>
+<li>Jean (5) - Master&apos;s Day Off</li>
+<li>Lisa (4) - Lost Book</li>
+<li>Venti (5) - Should You Be Trapped in a Windless Land</li>
+<li>Eula (5) - Through the Motions, to the Heart</li>
+<li>Klee (5) - A Very Volatile Treasure</li>
+<li>Mona (5) - A Bewildering Fate</li>
+<li>Xiangling (4) - Cooking Showdown</li>
+<li>Tartaglia (5) - Defender of Childhood Dreams</li>
+<li>Zhongli (5) - A Record of All Things</li>
+<li>Yelan (5) - Foregone Conclusion</li>
+<li>Ganyu (5) - A Pact That Crosses Time</li>
+<li>Albedo (5) - The Final Experiment: Withering Glory</li>
+<li>Xiao (5) - Insights of Drifting Dreams</li>
+<li>Hu Tao (5) - Perfect Send-Off</li>
+<li>Zhongli (5) - Amidst Chaos, the Rock Is Unmoved</li>
+<li>Xingqiu (4) - Justice Is Its Own Reward</li>
+<li>Kamisato Ayaka (5) - With You</li>
+<li>Yoimiya (5) - Together Under the Fireworks</li>
+<li>Raiden Shogun (5) - To Hear Mortal Hearts</li>
+<li>Sangonomiya Kokomi (5) - New Beginning</li>
+<li>Arataki Itto (5) - The Oni&apos;s Pride</li>
+<li>Yae Miko (5) - Banquet of Parting</li>
+<li>Kamisato Ayato (5) - The Wind Settles</li>
+<li>Raiden Shogun (5) - Radiant Sakura</li>
+<li>Kaedehara Kazuha (5) - Ere the End, a Glance Back</li>
+<li>Tighnari (5) - Garden Memories</li>
+<li>Nilou (5) - The Reason We Are Gathered Here</li>
+<li>Cyno (5) - All Returns to Silence</li>
+<li>Nahida (5) - Dream of Farewell</li>
+</ul>
+<h4 class="mume-header" id="--fishing-overhaul-">&#x1F3A3; Fishing Overhaul:</h4>
+
+<p>Added new Weapons, Gadgets and Characters to be purchased from the Angler Shops. In addition, Fishing Points now have 50 fishes instead of the normal ~10 before being exhausted.</p>
+<h4 class="mume-header" id="--paimon-shop--">&#x1F6D2; Paimon Shop:</h4>
+
+<p>Added permanent line-up of Characters to purchase (Kaeya, Lisa, Amber, Barbara, Xinyan, and Aloy), Royal Weapons and Blackcliff Weapons can be maxed out. Most purchase limits have been removed as well.</p>
+<h4 class="mume-header" id="-%EF%B8%8F-shop-limits-removed-">&#x1F6CD;&#xFE0F; Shop Limits Removed:</h4>
+
+<p>Food Ingredients and other limited purchase items from normal shops have been removed from some. For the rarer items like Cor Lapis you spend both Mora and Resin to purchase them. (EX: Cor Lapis costs 4 Resin per 1)</p>
+<h4 class="mume-header" id="--limited-items-added-">&#x1F60A; Limited Items Added:</h4>
+
+<p>Normally Limited Items like Crowns of Insight and Fates can be purchased from certain areas in unlimited supply if you really want to farm forever.</p>
+<h4 class="mume-header" id="--resin-overhaul-">&#x1F319; Resin Overhaul:</h4>
+
+<p>Resin now caps and regenerates to 240 Resin. In addition, instead of 1 Resin every 8 Minutes it&apos;s 1 Resin every 1 Minute. Purchasing Resin with Primogems now stays at the cost of 50 and doesn&apos;t increase.</p>
+<h4 class="mume-header" id="-resin-cost-removal-">&#x1F4B0;Resin Cost Removal:</h4>
+
+<p>Ley Lines, Domains and Weekly Bosses have had their Resin cost changed to 1. Farm them as much as you want.</p>
+<h4 class="mume-header" id="--time-gate-removal-">&#x231A; Time Gate Removal:</h4>
+
+<p>Weekly Bosses can be run 99 times per week now. Domains are now in 24/7 Sunday mode so you can pick whichever one you want on any day. Crimson Wishes now give 10x Crimson Agates instead of 1x, so you can finish the Frostbearing Tree when Crimson Wishes are unlocked.</p>
+<h4 class="mume-header" id="--daily-commissions-">&#x1F4C6; Daily Commissions:</h4>
+
+<p>Every Daily Commission gives you 10x Story Keys and you can now hold 99 Story Keys, removing them as a Time Gate. You also now get 63 Character Ascension Material when you claim your Adventure Treasure Pack per day.</p>
+<h4 class="mume-header" id="-%EF%B8%8Fspiral-abyss--">&#x1F32A;&#xFE0F;Spiral Abyss:</h4>
+
+<p>Set up schedule so it should last to &apos;2030-01-01&apos;.</p>
+<h4 class="mume-header" id="-%EF%B8%8F-reputation-overhaul-">&#x1F3D9;&#xFE0F; Reputation Overhaul:</h4>
+
+<p>When you get to rank 4 and rank 8 for that zones Reputation you get rewarded characters. In addition, tweaked EXP given so that you should only have to complete &apos;World Completion&apos; and &apos;City Quests&apos; to fully max out your Reputation. No need to farm Bounties.</p>
+<ul>
+<li>Mondstadt: LV4 Bennett, LV8 Jean</li>
+<li>Liyue: LV4 Xinyan, LV8 Qiqi</li>
+<li>Inazuma: LV4 Kujou Sara, LV8 Kaedehara Kazuha</li>
+<li>Sumeru: LV4 Candace, LV8 Nilou</li>
+</ul>
+<h1 class="mume-header" id="--enjoy--">&#x1F604; Enjoy &#x1F604;</h1>
+
+
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
